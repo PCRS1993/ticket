@@ -18,22 +18,34 @@
 <div class="div2">
                                 <div  class="div2">               
                                 <h1>Ref_Effectif</h1> 
-                        </div>             
+                        </>             
             <form action="../controleurs/newreferentiel.php" method="post">
-                Sessions
-                <input style="margin-left:230px; margin-bottom: 25px;" type="text" name="nom" value=""><br>
-                    <option value="promo 1">
-                    <option value="promo 2">
-                    <option value="promo 3">
-                Référentiels
-                <input style="margin-left:160px; margin-bottom: -50px;" type="text" name="datecreation" value=""><br><br>
-                    <option value="ref-dig">
-                    <option value="dev-web">
-                    <option value="data-artisan">
-                Effectif
-                <input style="margin-left:160px; margin-bottom: -50px;" type="text" name="datecreation" value=""><br><br>
-                <input type="reset" name="" id="">
-                <input type="submit" name="valider" id="">
+                    <div>
+                    <label for="">Sessions</label>  
+                            <select class="sessions">
+                            <option>promo 1</option>
+                            <option>promo 2</option>
+                            <option>promo 3</option>
+                            </select> 
+                </div>
+                <div>
+                    <label for="">Référentiels</label>   
+                    
+                    <select class="referentiels">
+                    <option>ref-dig</option>
+                    <option>dev-web</option>
+                    <option>data-artisan</option>
+                    </select> 
+                </div>
+                <div>
+                    <label for=""> Effectif</label> 
+                    <input style="margin: 20px" type="text" name="nom" value=""><br>
+                </div>
+                <div>
+                        <input type="reset" name="" id="">
+                        <input type="submit" name="valider" id="">
+
+                </div>
                 </form>
     </div></center>
             <img src="../Public/img/logo.jpg" alt="logo">
