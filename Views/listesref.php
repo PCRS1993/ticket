@@ -20,16 +20,36 @@
                                             
                             </div>
                             <button><a href="new-referentiel.php">NOUVEAU</a></button>
-            <table border="1">
-                    <thead>
+                            <?php
+     include_once('../controleurs/db_connect.php');
+           $query = $bdd->query("SELECT * FROM `referentiel` ");
+           $referentiels= $query->fetchAll();
+          // var_dump($users) ;
+
+         ?>
+
+
+         <table border="1">
+                <thead>
+                <tr>
+                     <th>Nom</th>
+                     <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php 
+                    foreach ($referentiels as $key => $referentiel) {
+                   
+                ?>
                     <tr>
-                        <th>Nom</th>
-                        <th>Actions </th>
+                       <td><?php echo $referentiel['nom'];?></td>
                     </tr>
-                    </thead>
-                    <tbody>
-                    </tbody>
-            </table>
+                <?php
+                     
+                    }
+                 ?>
+                </tbody>
+         </table>
                         <h2>Coding for better Life</h2>
                         
         </div></center>

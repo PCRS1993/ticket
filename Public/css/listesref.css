@@ -33,6 +33,8 @@ h1{
 table{
     margin-right: -110px;
     margin-top: 5%;
+    height: auto;
+    height: auto;
 }
 table, th, td {
     border: 1px solid black;
