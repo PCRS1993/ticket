@@ -20,14 +20,7 @@
                                     
                                         <button><a href="page-utilisateur.php">NOUVEAU</a></button>
                         </div>
-                        <?php
-    include_once('db_connect.php');
-           $query = $pdo->query("SELECT * FROM `liste` ");
-        
-        $listes= $query->fetchAll();
-          // var_dump($listes) ;
-
-        ?>
+                       
 
 
         <table border="1">
@@ -58,6 +51,7 @@
                     
     </div></center>
     <img src="../Public/img/logo.jpg" alt="logo">
+    
     </div>
 </body>
 </html>

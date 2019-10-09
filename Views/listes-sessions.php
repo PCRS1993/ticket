@@ -57,7 +57,7 @@
                 </tbody>
          </table>
                     <h2>Coding for better Life</h2>
-                    <img src="../Public/img/logo.jpg" alt="logo">
+                    
     </div></center>
     <img src="../Public/img/logo.jpg" alt="logo"> 
     </div>

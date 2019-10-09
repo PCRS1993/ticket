@@ -23,17 +23,17 @@
 
                 <form action="../controleurs/nouveluser.php" method="post">
                   NOM:
-                <input required style="margin-left:200px; margin-bottom: 15px;" type="text" name="nom" value=""><br>
+                <input required style="margin-left:285px; margin-bottom: 15px;" type="text" name="nom" value=""><br>
                   PRÈNOM:
-              <input required style="margin-left:165px; margin-bottom: -4px;" type="text" name="prenom" value=""><br><br>
+              <input required style="margin-left:250px; margin-bottom: -4px;" type="text" name="prenom" value=""><br><br>
               PROFILS:
-              <input required style="margin-left:165px; margin-bottom: -4px;" type="text" name="profil" value=""><br><br>
+              <input required style="margin-left:250px; margin-bottom: -4px;" type="text" name="profil" value=""><br><br>
               LOGIN:
-              <input required style="margin-left:185px; margin-bottom: -4px;"type="text" name="login" value=""><br><br>
+              <input required style="margin-left:272px; margin-bottom: -4px;"type="text" name="login" value=""><br><br>
               MOT DE PASSE:
-            <input required style="margin-left:110px; margin-bottom: -4px;" type="password" name="password" value=""><br><br>
+            <input required style="margin-left:200px; margin-bottom: -4px; border: solid black 2px; height:26px; width:43%; border-radius:6px;" type="password" name="password" value=""><br><br>
              CONFIRMER MOT DE PASSE:
-            <input required style="margin-left:110px; margin-bottom: -4px;" type="password" name="confirmer" value=""><br><br>
+            <input required style="margin-left:90px; margin-bottom: -4px; border: solid black 2px; height:26px; width:43%; border-radius:6px;" type="password" name="confirmer" value=""><br><br>
               
                   <input type="reset" name="" id="">
                   <input type="submit" name="valider" id="">
