@@ -56,11 +56,12 @@ img{
     height: 90px;
     position: absolute;
     top: 75px;
+   
 
 }
 h2{
     color: #147678;
-    margin-top: -60px;
+    margin-top: -5px;
 }
 button{
     float:right;

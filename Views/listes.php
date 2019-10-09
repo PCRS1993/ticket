@@ -27,7 +27,12 @@
                                     
                                         <button><a href="page-utilisateur.php">NOUVEAU</a></button>
                         </div>
+<<<<<<< HEAD
       
+=======
+                       
+
+>>>>>>> c860d0b66f88bf22542034fb38e19c8dc7281c12
 
         <table border="1">
                 <thead>
@@ -57,6 +62,7 @@
                     
     </div></center>
     <img src="../Public/img/logo.jpg" alt="logo">
+    
     </div>
 </body>
 </html>
