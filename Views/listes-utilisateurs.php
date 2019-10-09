@@ -35,6 +35,8 @@
                      <th>Nom</th>
                      <th>Prenom</th>
                      <th>Login</th>
+                     <th>Modifier</th>
+                     <th>Supprimer</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -46,6 +48,12 @@
                        <td><?php echo $user['nom'];?></td>
                        <td><?php echo $user['prenom'];?></td>
                        <td><?php echo $user['login'];?></td>
+                       <td>
+        <a href="./formedit.php?edit=<?php echo $user['ID']; ?>">Edit</a>
+      </td>
+      <td>
+        <a href="../controleurs/delete.php?del=<?php echo $user['ID']; ?>">Delete</a>
+      </td>
                     </tr>
                 <?php
                      
