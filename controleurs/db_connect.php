@@ -2,7 +2,7 @@
 //Pour se connecter à une BDD
    $bdd = 'mysql:dbname=ticket;host=localhost';
    $user = 'root';
-   $password = 'mami93';
+   $password = 'dd';
 
 try {
    $bdd = new PDO($bdd, $user, $password);
