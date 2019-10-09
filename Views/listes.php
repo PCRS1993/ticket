@@ -1,3 +1,10 @@
+<?php
+    include_once('../controleurs/db_connect.php');
+          $query = $bdd->query("SELECT r.nom as nomref, s.nom as nomsession, ref.effectif FROM `refeffectif` ref, `session` s,`referentiel` r WHERE ref.id_ref = r.ID AND ref.id_session = s.ID");
+
+         $refeffectifs= $query->fetchAll();
+        
+        ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,14 +27,6 @@
                                     
                                         <button><a href="page-utilisateur.php">NOUVEAU</a></button>
                         </div>
-                        <?php
-    include_once('db_connect.php');
-           $query = $pdo->query("SELECT * FROM `liste` ");
-        
-        $listes= $query->fetchAll();
-          // var_dump($listes) ;
-
-        ?>
 
 
         <table border="1">
@@ -40,13 +39,13 @@
                 </thead>
                 <tbody>
                 <?php 
-                    foreach ($listes as $key => $liste) {
+                    foreach ($refeffectifs as $key => $refeffectif) {
                 
                 ?>
                     <tr>
-                        <td><?php echo $user['session'];?></td>
-                        <td><?php echo $user['referentiels'];?></td>
-                        <td><?php echo $user['effectif'];?></td>
+                        <td><?php echo $refeffectif['nomsession'];?></td>
+                        <td><?php echo $refeffectif['nomref'];?></td>
+                        <td><?php echo $refeffectif['effectif'];?></td>
                     </tr>
                 <?php
 
@@ -58,6 +57,7 @@
                     
     </div></center>
     <img src="../Public/img/logo.jpg" alt="logo">
+    
     </div>
 </body>
 </html>

@@ -8,7 +8,7 @@ if (isset ($_POST['valider'])){
                 echo "envoye";
             }
 
-            //header("Location: ../Views/new-referentiel.php");
+            header("Location: ../Views/listesref.php");
              
           
 ?>

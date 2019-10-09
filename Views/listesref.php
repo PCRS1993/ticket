@@ -17,13 +17,13 @@
 <center><div class="div1"> 
                         <div class="div2">
                                 <div  class="div2">               
-                                <h1>Liste Utilisateurs</h1>        
+                                <h1>Liste Référentiels</h1>        
                                         <button><a href="page-utilisateur.php">NOUVEAU</a></button>
                         </div>
                         <?php
     include_once('../controleurs/db_connect.php');
-           $query = $bdd->query("SELECT * FROM `user` ");
-            $users= $query->fetchAll();
+           $query = $bdd->query("SELECT * FROM `referentiel` ");
+            $referentiels= $query->fetchAll();
           // var_dump($users) ;
 
         ?>
@@ -34,8 +34,6 @@
                 <tr>
 
                      <th>Nom</th>
-                     <th>Prenom</th>
-                     <th>Login</th>
                      <th>Modifier</th>
                      <th>Supprimer</th>
 
@@ -45,19 +43,17 @@
                 </thead>
                 <tbody>
                 <?php 
-                    foreach ($users as $key => $user) {
+                    foreach ($referentiels as $key => $referentiel) {
                 
                 ?>
                     <tr>
 
-                       <td><?php echo $user['nom'];?></td>
-                       <td><?php echo $user['prenom'];?></td>
-                       <td><?php echo $user['login'];?></td>
+                       <td><?php echo $referentiel['nom'];?></td>
                        <td>
-        <a href="./formedit.php?edit=<?php echo $user['ID']; ?>">Edit</a>
+        <a href="./formmodifref.php?edit=<?php echo $referentiel['ID']; ?>"><i class="material-icons">border_color</i></a>
       </td>
       <td>
-        <a href="../controleurs/delete.php?del=<?php echo $user['ID']; ?>">Delete</a>
+        <a href="../controleurs/deleteref.php?del=<?php echo $referentiel['ID']; ?>" onclick="return confirm('voulez-vous Supprimer?')"><i class="material-icons">delete</i></a>
       </td>
 
 
