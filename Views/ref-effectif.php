@@ -1,3 +1,12 @@
+<?php
+
+include_once('../controleurs/db_connect.php');
+$query = $bdd->query("SELECT * FROM session");
+$sessions= $query->fetchAll(); 
+$query = $bdd->query("SELECT * FROM referentiel");
+$referentiels= $query->fetchAll(); 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,38 +23,54 @@
 <a href="listes-sessions.php">Sessions</a>
 
 </header>
+
 <center><div class="div1"> 
 <div class="div2">
                                 <div  class="div2">               
                                 <h1>Ref_Effectif</h1> 
-                        </>             
-            <form action="../controleurs/newreferentiel.php" method="post">
+                                    
+            <form action="../controleurs/refeffectif.php" method="post">
                     <div>
-                    <label for="">Sessions</label>  
-                            <select class="sessions">
-                            <option>promo 1</option>
-                            <option>promo 2</option>
-                            <option>promo 3</option>
-                            </select> 
+                    <label for="">Sessions</label>   
+                            <select class="sessions" name="session" >
+                            <option> </option>
+                            
+   <?php 
+                    foreach ($sessions as $key => $session) {  
+                    ?>
+                        <option value="<?php echo $session['ID'];?>"><?php echo $session['nom'];?></option> 
+
+                        <?php   } ?>
+                         
+                        </select> 
                 </div>
                 <div>
                     <label for="">Référentiels</label>   
                     
-                    <select class="referentiels">
-                    <option>ref-dig</option>
-                    <option>dev-web</option>
-                    <option>data-artisan</option>
-                    </select> 
+                    <select class="referentiels" name="referentiel">
+                    <option> </option>
+                   
+                    
+                    <?php 
+                    foreach ($referentiels as $key => $referentiel) {  
+                    ?>
+                        <option value="<?php echo $referentiel['ID'];?>"><?php echo $referentiel['nom'];?></option> 
+                 <?php   } ?>
+                </select> 
                 </div>
                 <div>
                     <label for=""> Effectif</label> 
-                    <input style="margin: 20px" type="text" name="nom" value=""><br>
+                    <input style="margin: 0px" type="text" name="effectif" value=""><br>
                 </div>
                 <div>
                         <input type="reset" name="" id="">
                         <input type="submit" name="valider" id="">
 
                 </div>
+                <?php
+                if(isset($_GET['erreur'])){
+                echo $_GET['erreur'];}
+                ?>
                 </form>
     </div></center>
             <img src="../Public/img/logo.jpg" alt="logo">
