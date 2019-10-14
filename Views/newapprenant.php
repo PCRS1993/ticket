@@ -43,7 +43,7 @@
 </div>
 <img src="../Public/img/logo.jpg"  style="width: 10%;" alt="logo.jpg"> 
 
-<div class="container" style= "border: solid black 1px;height: 1050px;">
+<div class="container" style= "border: solid black 1px;height: 1020px;">
 
 <div class="row">
 <div class="col-12 text-center">

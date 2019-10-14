@@ -24,7 +24,7 @@
 <center><div class="div1"> 
                         
                                 <div  class="div2">               
-                                    
+                                    <h1>Liste Référentiel/Session</h1>
                                         <button><a href="page-utilisateur.php">NOUVEAU</a></button>
                         </div>
 
