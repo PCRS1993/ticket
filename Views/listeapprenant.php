@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <title>nouveau apprenant</title>
+  <title>Liste apprenants</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -43,7 +43,36 @@
 </div>
 <img src="../Public/img/logo.jpg"  style="width: 10%;" alt="logo.jpg"> 
 
-<div class="container" style= "border: solid black 2px;height: 850px;">
+<div class="col-12 col-md-2 offset-md-2">
+  <div class="form-group row">
+    <label for="uname" >Référentiel:</label>
+ <select name="Ref" class="custom-select">
+    <option selected></option>
+    <option value="">Ref Dig</option>
+    <option value="">Dev Web</option>
+    <option value="">Data Artisan</option>
+    
+    </select> 
+    </div>
+
+    <div class="form-group ">
+     <label for="uname">Session:</label>
+ <select name="cars" class="custom-select">
+    <option selected></option>
+    <option value="Promo1">Promo 1</option>
+    <option value="Promo2">Promo 2</option>
+    <option value="Promo3">Promo 3</option>
+
+    </select> 
+    </div>
+
+    <div class="form-group row">
+    <button type="button" class="btn btn-success">Rechercher</button>
+    </div>
+
+</div>
+   
+<div class="container-fluid" style= "border: solid black 2px;">
 
 <div class="row">
       <div class="col-12 text-center">
@@ -63,6 +92,7 @@
                         <th>Session</th>
                         <th>Référentiel</th>
                         <th>Login</th>
+                        <th>Action</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -77,6 +107,10 @@
                         <td>Promo 2</td>
                         <td>Réf Dig</td>
                         <td>PCRS</td>
+                        <td>
+        <a href="./formedit.php?edit=<?php echo $user['ID']; ?>">Edit</a>
+      </td>
+      <td>
                       </tr>      
                       <tr class="table-primary">
                         <td>Bah</td>
@@ -89,6 +123,10 @@
                         <td>Promo 2</td>
                         <td>Réf Dig</td>
                         <td>PCRM</td>
+                        <td>
+        <a href="./formedit.php?edit=<?php echo $user['ID']; ?>">Edit</a>
+      </td>
+      <td>
                       </tr>
                       <tr class="table-success">
                         <td>Sylla</td>
@@ -101,6 +139,10 @@
                         <td>Promo 2</td>
                         <td>Réf Dig</td>
                         <td>PCRS</td>
+                        <td>
+        <a href="./formedit.php?edit=<?php echo $user['ID']; ?>">Edit</a>
+      </td>
+      <td>
                       </tr>
                       <tr class="table-danger">
                         <td>Dramé</td>
@@ -113,6 +155,10 @@
                         <td>Promo 2</td>
                         <td>Réf Dig</td>
                         <td>Mackenzy</td>
+                        <td>
+        <a href="./formedit.php?edit=<?php echo $user['ID']; ?>">Edit</a>
+      </td>
+      <td>
                       </tr>
                       <tr class="table-info">
                         <td>Doumbouya</td>
@@ -125,6 +171,10 @@
                         <td>Promo 2</td>
                         <td>Réf Dig</td>
                         <td>PCRS</td>
+                        <td>
+        <a href="./formedit.php?edit=<?php echo $user['ID']; ?>">Edit</a>
+      </td>
+      <td>
                       </tr>
                       <tr class="table-warning">
                         <td>Warning</td>
@@ -137,6 +187,10 @@
                         <td>Promo 2</td>
                         <td>Réf Dig</td>
                         <td>PCRS</td>
+                        <td>
+        <a href="./formedit.php?edit=<?php echo $user['ID']; ?>">Edit</a>
+      </td>
+      <td>
                       </tr>
                       <tr class="table-active">
                         <td>Active</td>
@@ -149,6 +203,10 @@
                         <td>Promo 2</td>
                         <td>Réf Dig</td>
                         <td>PCRS</td>
+                        <td>
+        <a href="./formedit.php?edit=<?php echo $user['ID']; ?>">Edit</a>
+      </td>
+      <td>
                       </tr>
                       <tr class="table-secondary">
                         <td>Secondary</td>
@@ -161,6 +219,10 @@
                         <td>Promo 2</td>
                         <td>Réf Dig</td>
                         <td>PCRS</td>
+                        <td>
+        <a href="./formedit.php?edit=<?php echo $user['ID']; ?>">Edit</a>
+      </td>
+      <td>
                       </tr>
                       <tr class="table-light">
                         <td>Light</td>
@@ -173,6 +235,10 @@
                         <td>Promo 2</td>
                         <td>Réf Dig</td>
                         <td>PCRS</td>
+                        <td>
+        <a href="./formedit.php?edit=<?php echo $user['ID']; ?>">Edit</a>
+      </td>
+      <td>
                       </tr>
                       <tr class="table-dark text-dark">
                         <td>Dark</td>
@@ -185,7 +251,13 @@
                         <td>Promo 2</td>
                         <td>Réf Dig</td>
                         <td>PCRS</td>
+                        <td>
+        <a href="./formedit.php?edit=<?php echo $user['ID']; ?>">Edit</a>
+      </td>
+      <td>
                       </tr>
+                      <td>
+        
                     </tbody>
                   </table>
 

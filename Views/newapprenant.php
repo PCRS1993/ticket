@@ -55,7 +55,7 @@
     <div class="col-12 col-md-6 offset-md-3">
     <form action="/action_page.php" class="was-validated">
   <div class="form-group">
-    <label for="uname">Nom:</label>
+    <label for="uname">Nom:</label><br>
     <input type="text" class="form-control" id="uname" placeholder="Entrer nom" name="uname" required>
     <div class="valid-feedback">Valid.</div>
 
