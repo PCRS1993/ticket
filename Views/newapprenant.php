@@ -49,7 +49,7 @@
        </div>
          <!-- Formulaire -->
        <div class="row">
-       <div class="col-2"></div>
+       <div class="col-3"></div>
        <div class="col">
               <div class="card border border-primary">
                       <div class="card-header bg-primary">
