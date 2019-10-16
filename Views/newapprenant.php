@@ -12,65 +12,6 @@
   <body>
      <div class="container-fluid px-0">
      <!-- Barre de Navigation -->
-<<<<<<< HEAD
-      
-       
-       
-     <nav class="navbar navbar-expand-lg navbar-success bg-primary">
-       
-       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
-       </button>
-       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-         <ul class="navbar-nav">
-           
-             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               Utilisateurs
-             </a>
-             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-               <a class="dropdown-item" href="#">Promo 3</a>
-               <a class="dropdown-item" href="#">Promo 4</a>
-               <a class="dropdown-item" href="#">Promo 5</a>
-               <a class="dropdown-item" href="#">Promo 6</a>
-               <a class="dropdown-item" href="#">Promo 7</a>
-               <a class="dropdown-item" href="#">Promo 8</a>
-
-         </div>
-             </ul>
-             
-       </div>
-</nav>      
-       
-       
-       
-       
-       
-       <nav class="navbar navbar-expand-lg navbar-success bg-primary">
-       
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Sessions
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Promo 3</a>
-                <a class="dropdown-item" href="#">Promo 4</a>
-                <a class="dropdown-item" href="#">Promo 5</a>
-                <a class="dropdown-item" href="#">Promo 6</a>
-                <a class="dropdown-item" href="#">Promo 7</a>
-                <a class="dropdown-item" href="#">Promo 8</a>
-
-          </div>
-              </ul>
-              
-        </div>
-</nav>
-      
-=======
         
      <nav class="navbar navbar-expand-lg navbar-success bg-primary">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -121,15 +62,14 @@
        </div>
 </nav>      
            
->>>>>>> 96f6148fb0685eab00778b515a4b4de8d96660be
          <!-- Logo-->
        <div class="row">
            <img src="../Public/img/logo.jpg" class="img-fluid mw-7" alt="">
        </div>
          <!-- Formulaire -->
        <div class="row">
-       <div class="col-5 justify-content-center"></div>
-       <div class="col">
+       <div class="col-3 justify-content-center"></div>
+       <div class="col-6">
               <div class="card border border-primary">
                       <div class="card-header bg-primary">
                       <div class= "text-center text-primary font-weight-bold">
