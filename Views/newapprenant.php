@@ -75,7 +75,7 @@
          <!-- Formulaire -->
        <div class="row">
        <div class="col-3 justify-content-center"></div>
-       <div class="col-8">
+       <div class="col-6">
               <div class="card border border-primary">
                       <div class="card-header bg-primary">
                       <div class= "text-center text-primary font-weight-bold">
@@ -83,98 +83,99 @@
                         </div>
                       </div>
                       <div class="card-body">
-                      <form action="/action_page.php" class="">
-  <div class="form-group">
-    <label for="uname">Nom:</label>
-    <input type="text" class="form-control" id="uname" placeholder="Entrer nom" name="nom" >
-     <br>
-
-
-  <div class="form-group">
-    <label for="uname">Prénom:</label>
-    <input type="text" class="form-control" id="uname" placeholder="Entrer prénom" name="prenom" required>
-    <div class="valid-feedback">Valid.</div> <br>
-
-<div class="form-group">
-    <label for="uname">Email:</label>
-    <input type="text" class="form-control" id="uname" placeholder="Entrer email" name="email" required>
-    <div class="valid-feedback">Valid.</div>
-
-    <div class="form-group">
-    <label for="uname">Adresse:</label>
-    <input type="text" class="form-control" id="uname" placeholder="Entrer adresse" name="adresse" required>
-    <div class="valid-feedback">Valid.</div>
-
-    <div class="form-group">
-    <label for="uname">Téléphone:</label>
-    <input type="text" class="form-control" id="uname" placeholder="Entrer téléphone" name="telephone" required>
-    <div class="valid-feedback">Valid.</div>  
-
- <div class="form-group">
-    <label for="uname">Téléphone tuteur:</label>
-    <input type="text" class="form-control" id="uname" placeholder="Entrer Tél tuteur" name="telephonetuteur" required>
-    <div class="valid-feedback">Valid.</div>
-
-<div class="form-group">
-<label for="uname">Statut:</label>
- <select name="statut" class="custom-select">
-    <option selected></option>
-    <option value="">Présent</option>
-    <option value="">Abandonné</option>
-</select> </div>
-
-<div class="form-group">
-<label for="uname">Session:</label>
- <select name="session" class="custom-select">
-    <option selected></option>
-    <option value="">2020</option>
-    <option value="">2021</option>
-    <option value="">2022</option>
-    <option value="">2023</option>
-</select> </div>
-
-  <div class="form-group">
-<label for="uname">Référentiel:</label>
- <select name="referentiel" class="custom-select">
-    <option selected></option>
-    <option value="">Référent digital</option>
-    <option value="">Data artisan</option>
-    <option value="">Dev Web</option>
-</select> </div> 
-
-
-<div class="form-group">
-    <label for="uname">Login:</label>
-    <input type="text" class="form-control" id="uname" placeholder="Enter username" name="login" required>
-    <div class="valid-feedback">Valid.</div>
+  <form>
+  <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="uname">Nom:</label>
+          <input type="text" class="form-control" id="uname" placeholder="Entrer nom" name="nom">
+        </div>
+          <div class="form-group col-md-6">
+                <label for="uname">Prénom:</label>
+                <input type="text" class="form-control" id="uname" placeholder="Entrer prénom" name="prenom">
+          </div>
   </div>
-  
-  <div class="form-group">
-    <label for="pwd">Password:</label>
-    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
-    <div class="valid-feedback">Valid.</div>
+  <div class="form-row"> 
+            <div class="form-group col-md-6">
+                  <label for="inputEmail4">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="Entrer email" name="email">
+                </div>
 
+              <div class="form-group col-md-6">
+                  <label for="inputAddress">Adresse</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="Veuillez saisir votre adresse" name="adresse">
+                </div>
   </div>
- <div class="row"> 
-  <button type="submit">Annuler</button>
 
-  </div> 
-  <div class="btn2"> 
-  <button type="submit">Valider</button>
-  </div> 
-  </div> 
-
-</form>
-  
-                      </div>
+  <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputtelephone">Téléphone</label>
+                <input type="text" class="form-control" id="inputtelephone" placeholder="+221" name="telephone">
               </div>
-       
-       </div>
-       <div class="col-3"></div>
-       
-       </div>
+              <div class="form-group col-md-6">
+                <label for="inputtelephonetuteur">Téléphone tuteur</label>
+                <input type="text" class="form-control" id="inputtelephone" placeholder="+221" name="telephonetuteur">
+              </div>
+  </div>
 
-     </div> 
+  <div class="form-row">
+              <div class="form-group col-md-6">
+                  <label for="inputSession">Session</label>
+                  <select id="inputSession" class="form-control">
+                    <option selected>Choisir</option>
+                    <option>Promo 1</option>
+                    <option>Promo 2</option>
+                    <option>Promo 3</option>
+                    <option>Promo 4</option>
+                  </select>
+                </div>
+                
+                <div class="form-group col-md-6">
+                  <label for="inputState">Référentiel</label>
+                  <select id="inputState" class="form-control">
+                    <option selected>Choisir</option>
+                    <option>Référent Digital</option>
+                    <option>Dev Web</option>
+                    <option>Data Artisan</option>
+                  </select>
+                </div>
+  </div>
+
+  <div class="form-row">             
+                <div class="form-group col-md-4">
+                  <label for="inputState">Statut</label>
+                  <select id="inputState" class="form-control">
+                    <option selected>Choisir</option>
+                    <option>Présent</option>
+                    <option>Abandonné</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-4">
+                <label for="inputtelephone">Login</label>
+                <input type="text" class="form-control" id="inputtelephone" placeholder="Entrer login" name="login">
+              </div>
+              <div class="form-group col-md-4">
+              <label for="inputPassword4">Password</label>
+              <input type="password" class="form-control" id="inputPassword4" placeholder="Password" name="pwd">
+             </div>
+  </div>        
+             
+             
+             
+             
+    
+  <div class="form-row">
+                <div class="form-group col-md-6">
+                <button type="reset" class="btn btn-primary">Annuler</button>
+                </div>
+                <div class="form-group col-md-6">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+  </div>
+</form>                
+
+            
+       
+       
 
 <style text="text/css">
 .bg-primary{
