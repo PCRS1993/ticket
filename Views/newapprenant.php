@@ -68,8 +68,8 @@
        </div>
          <!-- Formulaire -->
        <div class="row">
-       <div class="col-5 justify-content-center"></div>
-       <div class="col">
+       <div class=" col-6 justify-content-center">
+       <div class="col-6">
               <div class="card border border-primary">
                       <div class="card-header bg-primary">
                       <div class= "text-center text-primary font-weight-bold">
@@ -149,11 +149,11 @@
     <div class="valid-feedback">Valid.</div>
 
   </div>
- <div class="btn1 inline"> 
+ <div class=""> 
   <button type="submit">Annuler</button>
 
   </div> 
-  <div class="btn2 inline"> 
+  <div class="btn2"> 
   <button type="submit">Valider</button>
   </div> 
 
@@ -166,6 +166,7 @@
        <div class="col-3"></div>
        
        </div>
+
      </div> 
 
 <style text="text/css">
