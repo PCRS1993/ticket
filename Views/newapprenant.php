@@ -68,7 +68,11 @@
        </div>
          <!-- Formulaire -->
        <div class="row">
+<<<<<<< HEAD
        <div class=" col-6 justify-content-center">
+=======
+       <div class="col-3 justify-content-center"></div>
+>>>>>>> a1ea06b9639dac210371864c4439438181240d65
        <div class="col-6">
               <div class="card border border-primary">
                       <div class="card-header bg-primary">

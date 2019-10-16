@@ -1,86 +1,117 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <title>Liste apprenants</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-</head>
-<body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Liste des Apprenants</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<div class="container-fluid">
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-<ul class="navbar-nav">
-    <li class="nav-item active">
-      <a class="nav-link" href="#">Utilisateurs</a>
-    <li class="nav-item dropdown active">
-    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Sessions</a>
-    <div class="dropdown-menu row">
-      <a class="dropdown-item" href="#">Liste session</a>
-      <a class="dropdown-item" href="#">Nouvelle session</a>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+     <div class="container-fluid px-0">
+     <!-- Barre de Navigation -->
       
+       
+       
+     <nav class="navbar navbar-expand-lg navbar-success bg-primary">
+       
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarNavDropdown">
+         <ul class="navbar-nav">
+           
+             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Utilisateurs
+             </a>
+             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+               <a class="dropdown-item" href="#">Nouveau</a>
+               <a class="dropdown-item" href="#">Liste Des Utilisateurs</a>
+               
+         </div>
+             </ul>
+
+             <ul class="navbar-nav">
+           
+             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Sessions
+             </a>
+             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+               <a class="dropdown-item" href="#">Promo 3</a>
+               <a class="dropdown-item" href="#">Promo 4</a>
+               <a class="dropdown-item" href="#">Promo 5</a>
+               <a class="dropdown-item" href="#">Promo 6</a>
+               <a class="dropdown-item" href="#">Promo 7</a>
+               <a class="dropdown-item" href="#">Promo 8</a>
+
+         </div>
+             </ul>
+             <ul class="navbar-nav">
+           
+             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Référentiel
+             </a>
+             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+               <a class="dropdown-item" href="#">Nouveau</a>
+               <a class="dropdown-item" href="#">Liste Des Référentiels</a>
+               
+         </div>
+             </ul>
+             
+       </div>
+</nav>      
+       
+         <!-- Logo-->
+       <div class="row">
+         <div class="col-4">
+           <img src="../Public/img/logo.jpg" class="img-fluid mw-7" alt="">
+         </div>
+        
+           <div class="col"> 
+       
+         <!-- Formulaire -->
+         <form class="form-inline ">
+  <div class="form-row align-items-center">
+    <div class="col-auto my-5">
+      <label class="mr-sm-6 sr-only" for="inlineFormCustomSelect">Référentiel</label>
+      <select class="custom-select mr-sm-4" id="inlineFormCustomSelect">Référentiel
+        <option selected></option>
+        <option value="1">Référent Digital</option>
+        <option value="2">Développement Web</option>
+        <option value="3">Data Artisant</option>
+      </select>
     </div>
-  </li>
-  <div>
-  <li class="nav-item dropdown active">
-    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Référentiel</a>
-    <div class="dropdown-menu row">
-      <a class="dropdown-item" href="#">Liste referentiel</a>
-      <a class="dropdown-item" href="#">Nouveau</a>
-      
-     </div>
-    </div>
-
-    
-
-  </li>
-  </ul>
-
-
-</nav>
-</div>
-
-<img src="../Public/img/logo.jpg"  style="width: 10%;" alt="logo.jpg">
-
-  <div class="form-group row">
-    <div class="col-12 text-center">
-      <label for="uname" >Référentiel:</label>
- <select name="Ref" class="custom-select">
-    <option selected></option>
-    <option value="">Ref Dig</option>
-    <option value="">Dev Web</option>
-    <option value="">Data Artisan</option>
-    
-    </select> 
-    </div>
-    </div>
-
-    <div class="form-group row">
-     <label for="uname">Session:</label>
- <select name="cars" class="custom-select">
-    <option selected></option>
-    <option value="Promo1">Promo 1</option>
-    <option value="Promo2">Promo 2</option>
-    <option value="Promo3">Promo 3</option>
-
-    </select> 
-    </div>
-
-    <div class="form-group row">
-    <button type="button" class="btn btn-success">Rechercher</button>
-    </div>
- 
-<div class="container-fluid" style= "border: solid black 2px;">
-
-<div class="row">
-      <div class="col-12 text-center">
-      <h2>Liste Apprenants</h2>
+    <div class="col-auto my-5">
+      <label class="mr-sm-6 sr-only" for="inlineFormCustomSelect">Session</label>
+      <select class="custom-select mr-sm-4" id="inlineFormCustomSelect">Session
+        <option selected ></option>
+        <option value="1">Promo 1</option>
+        <option value="2">Promo 2</option>
+        <option value="3">Promo 3</option>
+      </select>
       </div>
-            
-                  <table class="table">
+    </div>
+    <div class="col-auto my-1">
+      <button type="submit" class="btn btn-success">Rechercher</button>
+      </div>
+    </div>
+  </form>
+  </div>
+</div>
+       <div class="row">
+       <div class="col-3"></div>
+       <div class="col">
+              <div class="card border border-primary">
+                      <div class="card-header bg-primary">
+                        <div class="col-12 text-center">
+                        Ajout Apprenant
+                      </div>
+                      </div>
+                      <div class="card-body">
+
+                        <table class="table">
                     <thead>
                       <tr>
                         <th>Nom</th>
@@ -261,25 +292,42 @@
         
                     </tbody>
                   </table>
-
                         
+                      </div>
+              </div>
+       
+       </div>
+       <div class="col-3"></div>
+       
+       </div>
+     </div> 
 
-        </div>
-                   
-      </div>
+<style text="text/css">
+.bg-primary{
+  background-color:#068689!important;
+}
+.img-fluid {
+    max-width: 30% !important;
+    height: auto;
+}
+.border-primary{
+  border-color: black!important;
+  border-width: 2px !important;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+button{
+  background-color:#068689!important;
 
+}
 
-
-    </div>
-
-  </div>
-
-
-
-
-
-
-
-
-</body>
+</style>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
