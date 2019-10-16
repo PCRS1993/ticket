@@ -11,55 +11,61 @@
   </head>
   <body>
      <div class="container-fluid px-0">
+
+   
+
      <!-- Barre de Navigation -->
         
      <nav class="navbar navbar-expand-lg navbar-success bg-primary">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
-       </button>
 
-       <div class="collapse navbar-collapse col-3" id="navbarNavDropdown">
-         <ul class="navbar-nav">
-           
-             <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               Utilisateurs
-             </a>
-             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-               <a class="dropdown-item" href="#">Nouveau</a>
-               <a class="dropdown-item" href="#">Liste</a>
+            <div class="btn-group">
+                  <button type="button" class="btn text-primary ">Utilisateurs</button>
+                  <button type="button" class="btn  dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="page-utilisateur.php">Nouveau</a>
+                    <a class="dropdown-item" href="listes-utilisateurs.php">Liste</a>
+                   
+                  </div>
+            </div>
 
-         </div>
-             </ul>
+            <div class="btn-group">
+                  <button type="button" class="btn text-primary ">Sessions</button>
+                  <button type="button" class="btn  dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="new-session.php">Nouvelle session</a>
+                    <a class="dropdown-item" href="listes-sessions.php">Liste</a>
+                   
+                  </div>
+            </div>
 
-             <ul class="navbar-nav">
-           
-           <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-             Sessions
-           </a>
-           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-             <a class="dropdown-item" href="#">Promo 3</a>
-             <a class="dropdown-item" href="#">Promo 4</a>
-             <a class="dropdown-item" href="#">Promo 5</a>
-             <a class="dropdown-item" href="#">Promo 6</a>
-             <a class="dropdown-item" href="#">Promo 7</a>
-             <a class="dropdown-item" href="#">Promo 8</a>
+            <div class="btn-group">
+                  <button type="button" class="btn text-primary ">Référent/Session</button>
+                  <button type="button" class="btn  dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="ref-effectif.php">Nouveau</a>
+                    <a class="dropdown-item" href="listes.php">Liste</a>
+                   
+                  </div>
+            </div>    
+            <div class="btn-group">
+                  <button type="button" class="btn text-primary ">Apprenant</button>
+                  <button type="button" class="btn  dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="newapprenant.php">Nouveau</a>
+                    <a class="dropdown-item" href="Listedesapprenants.php">Liste</a>
+                   
+                  </div>
+            </div> 
 
-       </div>
-           </ul>      
-           <ul class="navbar-nav">
-           
-           <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-             Référents
-           </a>
-           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-             <a class="dropdown-item" href="#">Référent digital</a>
-             <a class="dropdown-item" href="#">Dev Web</a>
-             <a class="dropdown-item" href="#">Data artisan</a>
-
-       </div>
-           </ul>      
-                                          
-       </div>
+        
 </nav>      
            
          <!-- Logo-->
@@ -68,12 +74,8 @@
        </div>
          <!-- Formulaire -->
        <div class="row">
-<<<<<<< HEAD
-       <div class=" col-6 justify-content-center">
-=======
        <div class="col-3 justify-content-center"></div>
->>>>>>> a1ea06b9639dac210371864c4439438181240d65
-       <div class="col-6">
+       <div class="col-8">
               <div class="card border border-primary">
                       <div class="card-header bg-primary">
                       <div class= "text-center text-primary font-weight-bold">
@@ -81,36 +83,36 @@
                         </div>
                       </div>
                       <div class="card-body">
-                      <form action="/action_page.php" class="was-validated">
+                      <form action="/action_page.php" class="">
   <div class="form-group">
     <label for="uname">Nom:</label>
-    <input type="text" class="form-control" id="uname" placeholder="Entrer nom" name="uname" required>
-    <div class="valid-feedback">Valid.</div> <br>
+    <input type="text" class="form-control" id="uname" placeholder="Entrer nom" name="nom" >
+     <br>
 
 
   <div class="form-group">
     <label for="uname">Prénom:</label>
-    <input type="text" class="form-control" id="uname" placeholder="Entrer prénom" name="uname" required>
+    <input type="text" class="form-control" id="uname" placeholder="Entrer prénom" name="prenom" required>
     <div class="valid-feedback">Valid.</div> <br>
 
 <div class="form-group">
     <label for="uname">Email:</label>
-    <input type="text" class="form-control" id="uname" placeholder="Entrer email" name="uname" required>
+    <input type="text" class="form-control" id="uname" placeholder="Entrer email" name="email" required>
     <div class="valid-feedback">Valid.</div>
 
     <div class="form-group">
     <label for="uname">Adresse:</label>
-    <input type="text" class="form-control" id="uname" placeholder="Entrer adresse" name="uname" required>
+    <input type="text" class="form-control" id="uname" placeholder="Entrer adresse" name="adresse" required>
     <div class="valid-feedback">Valid.</div>
 
     <div class="form-group">
     <label for="uname">Téléphone:</label>
-    <input type="text" class="form-control" id="uname" placeholder="Entrer téléphone" name="uname" required>
+    <input type="text" class="form-control" id="uname" placeholder="Entrer téléphone" name="telephone" required>
     <div class="valid-feedback">Valid.</div>  
 
  <div class="form-group">
     <label for="uname">Téléphone tuteur:</label>
-    <input type="text" class="form-control" id="uname" placeholder="Entrer Tél tuteur" name="uname" required>
+    <input type="text" class="form-control" id="uname" placeholder="Entrer Tél tuteur" name="telephonetuteur" required>
     <div class="valid-feedback">Valid.</div>
 
 <div class="form-group">
@@ -143,7 +145,7 @@
 
 <div class="form-group">
     <label for="uname">Login:</label>
-    <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+    <input type="text" class="form-control" id="uname" placeholder="Enter username" name="login" required>
     <div class="valid-feedback">Valid.</div>
   </div>
   
@@ -153,12 +155,13 @@
     <div class="valid-feedback">Valid.</div>
 
   </div>
- <div class=""> 
+ <div class="row"> 
   <button type="submit">Annuler</button>
 
   </div> 
   <div class="btn2"> 
   <button type="submit">Valider</button>
+  </div> 
   </div> 
 
 </form>
@@ -177,6 +180,11 @@
 .bg-primary{
   background-color:#068689!important;
 }
+.btn-primary{
+  background-color:#068689!important;
+}
+
+
 .img-fluid {
     max-width: 7%!important;
     height: auto;
@@ -191,7 +199,7 @@
   color: white!important;
 }
 
-n
+
 </style>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
