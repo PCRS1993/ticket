@@ -20,10 +20,11 @@
                                 <h1>Liste Utilisateurs</h1>        
                                         <button><a href="page-utilisateur.php">NOUVEAU</a></button>
                         </div>
+
                         <?php
     include_once('../controleurs/db_connect.php');
            $query = $bdd->query("SELECT * FROM `user` ");
-            $users= $query->fetchAll();
+           $users= $query->fetchAll();
           // var_dump($users) ;
 
         ?>
