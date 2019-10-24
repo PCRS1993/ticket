@@ -27,10 +27,8 @@
                                     <h1>Liste Référentiel/Session</h1>
                                         <button><a href="page-utilisateur.php">NOUVEAU</a></button>
                         </div>
-<<<<<<< HEAD
-=======
 
->>>>>>> b73fb0ca55e1369078c28be3a81b8cbfba07ddce
+
 
         <table border="1">
                 <thead>
