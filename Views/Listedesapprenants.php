@@ -179,14 +179,14 @@
                       <tr class="table-danger">
                         <td>Dramé</td>
                         <td>Oumar</td>
-                        <td>mary@example.com</td>
-                        <td>Sicap Baobab</td>
-                        <td>777056793</td>
-                        <td>774565851</td>
+                        <td>oumardrame09@gmail.com</td>
+                        <td>Dieuppeul 03</td>
+                        <td>773125747</td>
+                        <td>773056757</td>
                         <td>Présent</td>
                         <td>Promo 2</td>
                         <td>Réf Dig</td>
-                        <td>Mackenzy</td>
+                        <td>Makenzy</td>
                         <td>
         <a href="./formedit.php?edit=<?php echo $user['ID']; ?>">Edit</a>
       </td>
@@ -321,6 +321,9 @@ a{
 button{
   background-color:#068689!important;
 
+}
+.text-primary{
+  color: white!important;
 }
 
 </style>
