@@ -37,8 +37,8 @@ $referentiels= $query->fetchAll();
                Utilisateurs
              </a>
              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-               <a class="dropdown-item" href="#">Nouveau</a>
-               <a class="dropdown-item" href="#">Liste Des Utilisateurs</a>
+               <a class="dropdown-item" href="page-utilisateur.php">Nouveau</a>
+               <a class="dropdown-item" href="listes-utilisateurs.php">Liste Des Utilisateurs</a>
                
          </div>
              </ul>
@@ -49,8 +49,8 @@ $referentiels= $query->fetchAll();
                Sessions
              </a>
              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-               <a class="dropdown-item" href="#">Nouveau</a>
-               <a class="dropdown-item" href="#">Liste Des Sessions</a>
+               <a class="dropdown-item" href="new-session.php">Nouveau</a>
+               <a class="dropdown-item" href="listes-sessions.php">Liste Des Sessions</a>
                
          </div>
              </ul>
@@ -60,8 +60,8 @@ $referentiels= $query->fetchAll();
                Référentiel
              </a>
              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-               <a class="dropdown-item" href="#">Nouveau</a>
-               <a class="dropdown-item" href="#">Liste Des Référentiels</a>
+               <a class="dropdown-item" href="new-referentiel.php">Nouveau</a>
+               <a class="dropdown-item" href="listesref.php">Liste Des Référentiels</a>
                
          </div>
              </ul>
