@@ -180,11 +180,11 @@ $referentiels= $query->fetchAll();
                 <button type="reset" class="btn btn-primary">Annuler</button>
                 </div>
                 <div class="form-group col-md-6">
-<<<<<<< HEAD
+
                 <button type="submit" class="btn btn-primary">Creer</button>
-=======
+
                 <button type="submit" name="valider" class="btn btn-primary">Sign in</button>
->>>>>>> 574ca3c522d2348866c691672fd502998dd19aa5
+
                 </div>
   </div>
 </form>                
