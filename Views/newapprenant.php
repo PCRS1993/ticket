@@ -19,13 +19,11 @@ $referentiels= $query->fetchAll();
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-     <div class="container-fluid px-0">
+    <div class="container-fluid px-0">
 
-   
-
-     <!-- Barre de Navigation -->
+    <!-- Barre de Navigation -->
         
-     <nav class="navbar navbar-expand-lg navbar-success bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-success bg-primary">
 
             <div class="btn-group">
                   <button type="button" class="btn text-primary ">Utilisateurs</button>
@@ -35,7 +33,7 @@ $referentiels= $query->fetchAll();
                   <div class="dropdown-menu">
                     <a class="dropdown-item" href="page-utilisateur.php">Nouveau</a>
                     <a class="dropdown-item" href="listes-utilisateurs.php">Liste</a>
-                   
+                  
                   </div>
             </div>
 
@@ -47,7 +45,7 @@ $referentiels= $query->fetchAll();
                   <div class="dropdown-menu">
                     <a class="dropdown-item" href="new-session.php">Nouvelle session</a>
                     <a class="dropdown-item" href="listes-sessions.php">Liste</a>
-                   
+                  
                   </div>
             </div>
 
@@ -59,7 +57,7 @@ $referentiels= $query->fetchAll();
                   <div class="dropdown-menu">
                     <a class="dropdown-item" href="ref-effectif.php">Nouveau</a>
                     <a class="dropdown-item" href="listes.php">Liste</a>
-                   
+                  
                   </div>
             </div>    
             <div class="btn-group">
@@ -70,21 +68,20 @@ $referentiels= $query->fetchAll();
                   <div class="dropdown-menu">
                     <a class="dropdown-item" href="newapprenant.php">Nouveau</a>
                     <a class="dropdown-item" href="Listedesapprenants.php">Liste</a>
-                   
+                  
                   </div>
             </div> 
 
         
 </nav>      
-           
-         <!-- Logo-->
-       <div class="row">
-           <img src="../Public/img/logo.jpg" class="img-fluid mw-7" alt="">
-       </div>
-         <!-- Formulaire -->
-       <div class="row">
-       <div class="col-3 justify-content-center"></div>
-       <div class="col-6">
+          <!-- Logo-->
+        <div class="row">
+            <img src="../Public/img/logo.jpg" class="img-fluid mw-7" alt="">
+        </div>
+          <!-- Formulaire -->
+        <div class="row">
+        <div class="col-3 justify-content-center"></div>
+        <div class="col-6">
               <div class="card border border-primary">
                       <div class="card-header bg-primary">
                       <div class= "text-center text-primary font-weight-bold">
@@ -175,26 +172,23 @@ $referentiels= $query->fetchAll();
               <div class="form-group col-md-4">
               <label for="inputPassword4">Password</label>
               <input type="password" class="form-control" id="inputPassword4" placeholder="Password" name="pwd">
-             </div>
+            </div>
   </div>        
-             
-             
-             
-             
-    
+
   <div class="form-row">
                 <div class="form-group col-md-6">
                 <button type="reset" class="btn btn-primary">Annuler</button>
                 </div>
                 <div class="form-group col-md-6">
+
+                <button type="submit" class="btn btn-primary">Creer</button>
+
                 <button type="submit" name="valider" class="btn btn-primary">Sign in</button>
+
                 </div>
   </div>
 </form>                
 
-            
-       
-       
 
 <style text="text/css">
 .bg-primary{
