@@ -159,7 +159,11 @@ $referentiels= $query->fetchAll();
                        <td class="table-warning"><?php echo $apprenant['referentiel'];?></td>
                        <td class="table-white"><?php echo $apprenant['login'];?></td>
                        <td class="table-dark">
+<<<<<<< HEAD
         <a href="./formmodifapprenant.php?edit=<?php echo $apprenant['ID']; ?>"><i class="fa fa-edit"></i>Edit</a>
+=======
+        <a href="./formmodifapprenant.php?edit=<?php echo $apprenant['ID']; ?>">Edit</a>
+>>>>>>> e4cf87497520971dbcfd686097afcae10803563e
 
       </td>
       <td class="table-dark">

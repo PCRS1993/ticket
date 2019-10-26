@@ -10,13 +10,13 @@
 <body>
 <header>
     <div>
-  <a href="listes-utilisateurs.php">Utilisateurs</a>
-  <a href="listes-sessions.php">Sessions</a>
+<a href="listes-utilisateurs.php">Utilisateurs</a>
+<a href="listes-sessions.php">Sessions</a>
 
-  </header> 
-  
-   <center><div class="div1"> 
-   <div class="div2">
+</header> 
+
+<center><div class="div1"> 
+<div class="div2">
                                 <div  class="div2">               
                                 <h1>NOUVEAU REFERENTIEL</h1> 
                         </div>             

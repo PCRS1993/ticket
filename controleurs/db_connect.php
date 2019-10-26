@@ -3,8 +3,8 @@
    $bdd = 'mysql:dbname=ticket;host=localhost';
 
 
-   $user = 'root';
-   $password = 'dd';
+   $user = 'PCRS';
+   $password = 'Pcrs15981993*';
 
 
 

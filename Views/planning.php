@@ -1,3 +1,9 @@
+<?php
+            include_once('../controleurs/db_connect.php');
+            $query = $bdd->query("SELECT * FROM `menu` ");
+            $menus= $query->fetchAll();
+             //var_dump($plats); die       
+        ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +18,11 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
 </head>
 <body>
         <!-- Barre de Navigation -->
@@ -78,77 +89,68 @@
                 <div class="col-6">
                     <div class="card border border-primary">
                         <div class="card-header bg-primary">
-                            <div class= "text-center text-primary font-weight-bold">Ajout MENU</div>
+                            <div class= "text-center text-primary font-weight-bold">plannifier MENU</div>
                         </div>
                         <div class="card-body">
-                            <form>
+                            <form action="../controleurs/controlplanning.php" method="POST">
                                 <div class="form-row">
-                                    <div class="form-group col-md-6">
-                                        <label for="uname">MENU</label>
-                                        <input type="text" class="form-control" id="uname" placeholder="Entrer menu" name="nom">
-                                    </div>
+                                <div class="form-group col-md-4">
+                <label for="inputState">JOUR</label>
+                <select id="inputState" class="form-control" name="jour">
+                    <option selected></option>
+                    <option>Lundi</option>
+                    <option>Mardi</option>
+                    <option>Mercredi</option>
+                    <option>Jeudi</option>
+                    <option>Vendredi</option>
+                    
+                </select>
+                </div>
                                 </div>
-                                </form>
+                                <div class="container">
+	
+                
+            <div class="row">
+        <?php 
+                    foreach ($menus as $key => $menu) {               
+                ?>                     
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label" for="inlineCheckbox1"><?php echo $menu ['nommenu'];?></label>&nbsp;
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="<?php echo $menu ['ID'];?><?php echo $menu ['nommenu'];?>" name="menu">
+                            </div>        
+                <?php                    
+                    }
+                ?> 
+                </div>
+                <div class="form-row">
+                                <div class="form-group col-md-4">
+                <label for="inputState">DESSERT</label>
+                <select id="inputState" class="form-control" name="dessert">
+                    <option selected></option>
+                    <option>fruits</option>
+                    <option>JUS</option>
+                    </select>
+                </div>
                                 </div>
-                            
-                                <section class="section-preview">
-
-                                        <!-- Default unchecked -->
-                                        <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="defaultUnchecked" checked="">
-                                        <label class="custom-control-label" for="defaultUnchecked">Yassa GUINAR</label>
-                                        </div>
-
-                                        <div class="my-2"></div>
-
-                                        <!-- Default checked -->
-                                        <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="defaultUnChecked" >
-                                        <label class="custom-control-label" for="defaultUnChecked">MAFFÉ</label>
-                                        </div>
-
-                                        <div class="my-2"></div>
-
-                                        <!-- Default indeterminate -->
-                                        <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="defaultIndeterminate" checked="">
-                                        <label class="custom-control-label" for="defaultIndeterminate">Thiébou DJEUNE</label>
-                                        </div>
-
-                                        <div class="my-2"></div>
-
-                                        <!-- Default unchecked disabled -->
-                                        <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="defaultChecked" checked="">
-                                        <label class="custom-control-label" for="defaultChecked">Cous-Cous</label>
-                                        </div>
-
-                                        <div class="my-2"></div>
-
-                                        <!-- Default checked disabled -->
-                                        <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="defaultChecked" >
-                                        <label class="custom-control-label" for="defaultChecked">Dakhine</label>
-                                        </div>
-                                        </section>
-                                        
-                                        <div class="form-row">
+                <div class="form-row my-3">
+                
                                     <div class="form-group col-md-6">
                                         <button type="reset" class="btn btn-primary">Annuler</button>
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <button type="submit" class="btn btn-primary">Creer</button>
+                                        <button type="submit" class="btn btn-primary" name="valider">Creer</button>
                                     </div>
+                        
                         </div>
+                                </form>
+                                </div>
+                                </div>
+                                </div>
                     </div>
                 </div>
             
 
-            </div>
             
-        </div>
-    </div>
-
 <style text="text/css">
             section{
                 margin : 15px;

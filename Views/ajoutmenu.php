@@ -1,3 +1,7 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -83,23 +87,23 @@
                             <div class= "text-center text-primary font-weight-bold">Ajout MENU</div>
                         </div>
                         <div class="card-body">
-                            <form>
+                            <form action="../controleurs/controlmenu.php" method="POST">
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
                                         <label for="uname">MENU</label>
-                                        <input type="text" class="form-control" id="uname" placeholder="Entrer menu" name="nom">
+                                        <input type="text" class="form-control" id="uname" placeholder="Entrer menu" name="nommenu">
                                     </div>
                                 </div>
-                                </form>
+                                
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
                                         <button type="reset" class="btn btn-primary">Annuler</button>
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <button type="submit" class="btn btn-primary">Creer</button>
+                                        <button name="valider" type="submit" class="btn btn-primary">Creer</button>
                                     </div>
                                 </div>
-                            
+                                </form>
                         </div>
                     </div>
                 </div>

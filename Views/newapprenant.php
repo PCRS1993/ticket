@@ -130,13 +130,13 @@ $referentiels= $query->fetchAll();
                   <select id="inputSession" class="form-control" name="session">
                             <option> </option>
                             
-   <?php 
+  <?php 
                     foreach ($sessions as $key => $session) {  
                     ?>
                         <option value="<?php echo $session['nom'];?>"><?php echo $session['nom'];?></option> 
 
                         <?php   } ?>
-                         
+                        
                         </select> 
                   
                 </div>
@@ -145,13 +145,13 @@ $referentiels= $query->fetchAll();
                   <label for="inputState">Référentiel</label>
                   <select id="inputState" class="form-control" name="ref">
                     <option> </option>
-                   
+                  
                     
                     <?php 
                     foreach ($referentiels as $key => $referentiel) {  
                     ?>
                         <option value="<?php echo $referentiel['nom'];?>"><?php echo $referentiel['nom'];?></option> 
-                 <?php   } ?>
+                <?php   } ?>
                 </select> 
                 </div>
   </div>
@@ -181,7 +181,6 @@ $referentiels= $query->fetchAll();
                 </div>
                 <div class="form-group col-md-6">
 
-                <button type="submit" class="btn btn-primary">Creer</button>
 
                 <button type="submit" name="valider" class="btn btn-primary">Sign in</button>
 

@@ -82,7 +82,13 @@
                                 <div class="col-12 text-center">
                                 <h2>Liste MENU</h2>
                                 </div>
-                                        
+                                <?php
+    include_once('../controleurs/db_connect.php');
+           $query = $bdd->query("SELECT * FROM `menu` ");
+            $menus= $query->fetchAll();
+          // var_dump($users) ;
+
+        ?>
                                             <table  class="table col-12 text-center">
                                                 <thead>
                                                 <tr>
@@ -90,21 +96,19 @@
                                                 </tr>
                                                 </thead>
                                                 <tbody>
-                                                <tr>
-                                                    <td>Yassa GUINAR</td>
-                                                    </tr> 
-                                                    <tr>
-                                                    <td>MAFFÉ</td>
-                                                    </tr> 
-                                                    <tr>
-                                                    <td>Thiébou DJEUN</td>
-                                                    </tr>
-                                                    <tr>
-                                                    <td>Dakhine</td>
-                                                    </tr> 
-                                                    <tr>
-                                                    <td>Cous-Cous</td>
-                                                    </tr>
+                                                <?php 
+                    foreach ($menus as $key => $menu) {
+                
+                ?>
+                    <tr>
+
+                       <td><?php echo $menu['nommenu'];?></td>
+                       <td>
+                       </tr>
+                <?php
+                    
+                    }
+                ?>
                                                     </tbody>
                                                     </table>
                             </div>
