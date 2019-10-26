@@ -18,6 +18,11 @@ $referentiels= $query->fetchAll();
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+      <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   </head>
   <body>
      <div class="container-fluid px-0">
@@ -80,31 +85,12 @@ $referentiels= $query->fetchAll();
          <!-- Formulaire -->
          <form class="form-inline ">
   <div class="form-row align-items-center">
-    <div class="col-auto my-5">
-      <label class="mr-sm-6 sr-only" for="inlineFormCustomSelect">Référentiel</label>
-      <select class="custom-select mr-sm-4" id="inlineFormCustomSelect">Référentiel
-        <option selected></option>
-        <?php 
-                    foreach ($referentiels as $key => $referentiel) {  
-                    ?>
-                        <option value="<?php echo $referentiel['nom'];?>"><?php echo $referentiel['nom'];?></option> 
-                 <?php   } ?>
-      </select>
-    </div>
-    <div class="col-auto my-5">
-      <label class="mr-sm-6 sr-only" for="inlineFormCustomSelect">Session</label>
-      <select class="custom-select mr-sm-4" id="inlineFormCustomSelect">Session
-        <option selected ></option>
-        <?php 
-                    foreach ($sessions as $key => $session) {  
-                    ?>
-                        <option value="<?php echo $session['nom'];?>"><?php echo $session['nom'];?></option> 
-
-                        <?php   } ?>
-      </select>
-      </div>
-    </div>
     <div class="col-auto my-1">
+               
+                <input type="text" class="form-control" id="uname" placeholder="recherche" name="prenom">
+          </div>
+    
+    <div class="col-auto my-5">
       <button type="submit" class="btn btn-success">Rechercher</button>
       </div>
       <div class="col-auto my-1">
@@ -137,7 +123,7 @@ $referentiels= $query->fetchAll();
 
                     ?>
 
-                        <table class="table">
+                        <table class="table w-100" id="apprenant" >
                     <thead>
                       <tr>
                         <th>Nom</th>
@@ -154,7 +140,7 @@ $referentiels= $query->fetchAll();
                       </tr>
                     </thead>
                     <tbody>
-<<<<<<< HEAD
+
                       <?php 
                     foreach ($apprenants as $key => $apprenant) {
                 
@@ -172,153 +158,11 @@ $referentiels= $query->fetchAll();
                        <td class="table-warning"><?php echo $apprenant['referentiel'];?></td>
                        <td class="table-white"><?php echo $apprenant['login'];?></td>
                        <td class="table-dark">
-        <a href="./formmodifapprenant.php?edit=<?php echo $apprenant['ID']; ?>">Edit</a>
-=======
-                      <tr>
-                        <td>Sarr</td>
-                        <td>Papa Cheikh René</td>
-                        <td>cheikhrene93@gmail.com</td>
-                        <td>Sicap Baobab</td>
-                        <td>777056793</td>
-                        <td>774565851</td>
-                        <td>Présent</td>
-                        <td>Promo 2</td>
-                        <td>Réf Dig</td>
-                        <td>PCRS</td>
-                        <td>
-        <a href="./formedit.php?edit=<?php echo $user['ID']; ?>">Edit</a>
-      </td>
-      <td>
-                      </tr>      
-                      <tr class="table-primary">
-                        <td>Bah</td>
-                        <td>Ramatoulaye</td>
-                        <td>ramaba389@gmail.com</td>
-                        <td>Parcelles</td>
-                        <td>777056793</td>
-                        <td>774565851</td>
-                        <td>Présent</td>
-                        <td>Promo 2</td>
-                        <td>Réf Dig</td>
-                        <td>PCRM</td>
-                        <td>
-        <a href="./formedit.php?edit=<?php echo $user['ID']; ?>">Edit</a>
-      </td>
-      <td>
-                      </tr>
-                      <tr class="table-success">
-                        <td>Sylla</td>
-                        <td>Fanny</td>
-                        <td>john@example.com</td>
-                        <td>HLM</td>
-                        <td>777056793</td>
-                        <td>774565851</td>
-                        <td>Présent</td>
-                        <td>Promo 2</td>
-                        <td>Réf Dig</td>
-                        <td>PCRS</td>
-                        <td>
-        <a href="./formedit.php?edit=<?php echo $user['ID']; ?>">Edit</a>
-      </td>
-      <td>
-                      </tr>
-                      <tr class="table-danger">
-                        <td>Dramé</td>
-                        <td>Oumar</td>
-                        <td>oumardrame09@gmail.com</td>
-                        <td>Dieuppeul 03</td>
-                        <td>773125747</td>
-                        <td>773056757</td>
-                        <td>Présent</td>
-                        <td>Promo 2</td>
-                        <td>Réf Dig</td>
-                        <td>Makenzy</td>
-                        <td>
-        <a href="./formedit.php?edit=<?php echo $user['ID']; ?>">Edit</a>
-      </td>
-      <td>
-                      </tr>
-                      <tr class="table-info">
-                        <td>Doumbouya</td>
-                        <td>Fatou</td>
-                        <td>july@example.com</td>
-                        <td>Sicap Baobab</td>
-                        <td>777056793</td>
-                        <td>774565851</td>
-                        <td>Présent</td>
-                        <td>Promo 2</td>
-                        <td>Réf Dig</td>
-                        <td>PCRS</td>
-                        <td>
-        <a href="./formedit.php?edit=<?php echo $user['ID']; ?>">Edit</a>
-      </td>
-      <td>
-                      </tr>
-                      <tr class="table-warning">
-                        <td>Warning</td>
-                        <td>Refs</td>
-                        <td>bo@example.com</td>
-                        <td>Sicap Baobab</td>
-                        <td>777056793</td>
-                        <td>774565851</td>
-                        <td>Présent</td>
-                        <td>Promo 2</td>
-                        <td>Réf Dig</td>
-                        <td>PCRS</td>
-                        <td>
-        <a href="./formedit.php?edit=<?php echo $user['ID']; ?>">Edit</a>
-      </td>
-      <td>
-                      </tr>
-                      <tr class="table-active">
-                        <td>Active</td>
-                        <td>Activeson</td>
-                        <td>act@example.com</td>
-                        <td>Sicap Baobab</td>
-                        <td>777056793</td>
-                        <td>774565851</td>
-                        <td>Présent</td>
-                        <td>Promo 2</td>
-                        <td>Réf Dig</td>
-                        <td>PCRS</td>
-                        <td>
-        <a href="./formedit.php?edit=<?php echo $user['ID']; ?>">Edit</a>
-      </td>
-      <td>
-                      </tr>
-                      <tr class="table-secondary">
-                        <td>Secondary</td>
-                        <td>Secondson</td>
-                        <td>sec@example.com</td>
-                        <td>Sicap Baobab</td>
-                        <td>777056793</td>
-                        <td>774565851</td>
-                        <td>Présent</td>
-                        <td>Promo 2</td>
-                        <td>Réf Dig</td>
-                        <td>PCRS</td>
-                        <td>
-        <a href="./formedit.php?edit=<?php echo $user['ID']; ?>">Edit</a>
-      </td>
-      <td>
-                      </tr>
-                      <tr class="table-light">
-                        <td>Light</td>
-                        <td>Angie</td>
-                        <td>angie@example.com</td>
-                        <td>Sicap Baobab</td>
-                        <td>777056793</td>
-                        <td>774565851</td>
-                        <td>Présent</td>
-                        <td>Promo 2</td>
-                        <td>Réf Dig</td>
-                        <td>PCRS</td>
-                        <td>
-        <a href="./formedit.php?edit=<?php echo $user['ID']; ?>">Edit</a>
->>>>>>> b29de22292c4c678802c4860814e6a4e22530191
+        <a href="./formmodifapprenant.php?edit=<?php echo $apprenant['ID']; ?>"><i class="fa fa-edit"></i>Edit</a>
+
       </td>
       <td class="table-dark">
-        <a href="../controleurs/deleteapprenant.php?del=<?php echo $apprenant['ID']; ?>" onclick="return confirm('voulez-vous Supprimer?')">delete</a>
+        <a href="../controleurs/deleteapprenant.php?del=<?php echo $apprenant['ID']; ?>" onclick="return confirm('voulez-vous Supprimer?')"><i class="fa fa-trash"></i>delete</a>
       </td>
 
 
@@ -329,8 +173,7 @@ $referentiels= $query->fetchAll();
                 ?>
                 </tbody>
         
-                    </tbody>
-                  </table>
+                   
                         
                       </div>
               </div>
@@ -371,6 +214,14 @@ button{
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('#apprenant').DataTable();
+} );
+</script>
 
 
   </body>
