@@ -155,7 +155,7 @@ $referentiels= $query->fetchAll();
                       </tr>
                     </thead>
                     <tbody>
-<<<<<<< HEAD
+
                       <?php 
                     foreach ($apprenants as $key => $apprenant) {
                 
@@ -174,149 +174,7 @@ $referentiels= $query->fetchAll();
                        <td class="table-white"><?php echo $apprenant['login'];?></td>
                        <td class="table-dark">
         <a href="./formmodifapprenant.php?edit=<?php echo $apprenant['ID']; ?>">Edit</a>
-=======
-                      <tr>
-                        <td>Sarr</td>
-                        <td>Papa Cheikh René</td>
-                        <td>cheikhrene93@gmail.com</td>
-                        <td>Sicap Baobab</td>
-                        <td>777056793</td>
-                        <td>774565851</td>
-                        <td>Présent</td>
-                        <td>Promo 2</td>
-                        <td>Réf Dig</td>
-                        <td>PCRS</td>
-                        <td>
-        <a href="./formedit.php?edit=<?php echo $user['ID']; ?>">Edit</a>
-      </td>
-      <td>
-                      </tr>      
-                      <tr class="table-primary">
-                        <td>Bah</td>
-                        <td>Ramatoulaye</td>
-                        <td>ramaba389@gmail.com</td>
-                        <td>Parcelles</td>
-                        <td>777056793</td>
-                        <td>774565851</td>
-                        <td>Présent</td>
-                        <td>Promo 2</td>
-                        <td>Réf Dig</td>
-                        <td>PCRM</td>
-                        <td>
-        <a href="./formedit.php?edit=<?php echo $user['ID']; ?>">Edit</a>
-      </td>
-      <td>
-                      </tr>
-                      <tr class="table-success">
-                        <td>Sylla</td>
-                        <td>Fanny</td>
-                        <td>john@example.com</td>
-                        <td>HLM</td>
-                        <td>777056793</td>
-                        <td>774565851</td>
-                        <td>Présent</td>
-                        <td>Promo 2</td>
-                        <td>Réf Dig</td>
-                        <td>PCRS</td>
-                        <td>
-        <a href="./formedit.php?edit=<?php echo $user['ID']; ?>">Edit</a>
-      </td>
-      <td>
-                      </tr>
-                      <tr class="table-danger">
-                        <td>Dramé</td>
-                        <td>Oumar</td>
-                        <td>oumardrame09@gmail.com</td>
-                        <td>Dieuppeul 03</td>
-                        <td>773125747</td>
-                        <td>773056757</td>
-                        <td>Présent</td>
-                        <td>Promo 2</td>
-                        <td>Réf Dig</td>
-                        <td>Makenzy</td>
-                        <td>
-        <a href="./formedit.php?edit=<?php echo $user['ID']; ?>">Edit</a>
-      </td>
-      <td>
-                      </tr>
-                      <tr class="table-info">
-                        <td>Doumbouya</td>
-                        <td>Fatou</td>
-                        <td>july@example.com</td>
-                        <td>Sicap Baobab</td>
-                        <td>777056793</td>
-                        <td>774565851</td>
-                        <td>Présent</td>
-                        <td>Promo 2</td>
-                        <td>Réf Dig</td>
-                        <td>PCRS</td>
-                        <td>
-        <a href="./formedit.php?edit=<?php echo $user['ID']; ?>">Edit</a>
-      </td>
-      <td>
-                      </tr>
-                      <tr class="table-warning">
-                        <td>Warning</td>
-                        <td>Refs</td>
-                        <td>bo@example.com</td>
-                        <td>Sicap Baobab</td>
-                        <td>777056793</td>
-                        <td>774565851</td>
-                        <td>Présent</td>
-                        <td>Promo 2</td>
-                        <td>Réf Dig</td>
-                        <td>PCRS</td>
-                        <td>
-        <a href="./formedit.php?edit=<?php echo $user['ID']; ?>">Edit</a>
-      </td>
-      <td>
-                      </tr>
-                      <tr class="table-active">
-                        <td>Active</td>
-                        <td>Activeson</td>
-                        <td>act@example.com</td>
-                        <td>Sicap Baobab</td>
-                        <td>777056793</td>
-                        <td>774565851</td>
-                        <td>Présent</td>
-                        <td>Promo 2</td>
-                        <td>Réf Dig</td>
-                        <td>PCRS</td>
-                        <td>
-        <a href="./formedit.php?edit=<?php echo $user['ID']; ?>">Edit</a>
-      </td>
-      <td>
-                      </tr>
-                      <tr class="table-secondary">
-                        <td>Secondary</td>
-                        <td>Secondson</td>
-                        <td>sec@example.com</td>
-                        <td>Sicap Baobab</td>
-                        <td>777056793</td>
-                        <td>774565851</td>
-                        <td>Présent</td>
-                        <td>Promo 2</td>
-                        <td>Réf Dig</td>
-                        <td>PCRS</td>
-                        <td>
-        <a href="./formedit.php?edit=<?php echo $user['ID']; ?>">Edit</a>
-      </td>
-      <td>
-                      </tr>
-                      <tr class="table-light">
-                        <td>Light</td>
-                        <td>Angie</td>
-                        <td>angie@example.com</td>
-                        <td>Sicap Baobab</td>
-                        <td>777056793</td>
-                        <td>774565851</td>
-                        <td>Présent</td>
-                        <td>Promo 2</td>
-                        <td>Réf Dig</td>
-                        <td>PCRS</td>
-                        <td>
-        <a href="./formedit.php?edit=<?php echo $user['ID']; ?>">Edit</a>
->>>>>>> b29de22292c4c678802c4860814e6a4e22530191
+
       </td>
       <td class="table-dark">
         <a href="../controleurs/deleteapprenant.php?del=<?php echo $apprenant['ID']; ?>" onclick="return confirm('voulez-vous Supprimer?')">delete</a>

@@ -88,17 +88,17 @@ if (isset($_GET['edit'])) {
                   <div class="dropdown-menu">
                     <a class="dropdown-item" href="newapprenant.php">Nouveau</a>
                     <a class="dropdown-item" href="Listedesapprenants.php">Liste</a>
-                   
+                  
                   </div>
             </div> 
 
         
 </nav>      
-           
-         <!-- Logo-->
-       <div class="row">
-           <img src="../Public/img/logo.jpg" class="img-fluid mw-7" alt="">
-       </div>
+
+        <!-- Logo-->
+      < class="row">
+          <img src="../Public/img/logo.jpg" class="img-fluid mw-7" alt="">
+       </ div>
          <!-- Formulaire -->
        <div class="row">
        <div class="col-3 justify-content-center"></div>
@@ -161,7 +161,7 @@ if (isset($_GET['edit'])) {
 
   <div class="form-row">             
                 <div class="form-group col-md-4">
-                 <label for="inputtelephone">Login</label>
+                <label for="inputtelephone">Statut</label>
                 <input type="text" class="form-control" id="inputtelephone" placeholder="Entrer login" name="statut" value="<?php echo $statut; ?>">
                 </div>
                 
@@ -172,12 +172,9 @@ if (isset($_GET['edit'])) {
               <div class="form-group col-md-4">
               <label for="inputPassword4">Password</label>
               <input type="password" class="form-control" id="inputPassword4" placeholder="Password" name="password" value="<?php echo $password; ?>">
-             </div>
+            </div>
   </div>        
-             
-             
-             
-             
+
     
   <div class="form-row">
                 <div class="form-group col-md-6">
