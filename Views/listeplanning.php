@@ -2,16 +2,20 @@
 
      include_once('../controleurs/db_connect.php');
 
-    $query = $bdd->query("SELECT plannifier.jour as pj,menu.nommenu as nmenu,dessert 
+    $query = $bdd->query("SELECT plannifier.jour as pj,idmenu1,nommenu,dessert FROM plannifier, menu WHERE plannifier.idmenu1 = menu.ID");
+    $menus1 = $query->fetchAll(); 
 
-        FROM plannifier, menu
-        WHERE plannifier.idmenu1 = menu.ID
-        OR plannifier.idmenu2 = menu.ID
-        OR plannifier.idmenu3 = menu.ID
-        OR plannifier.idmenu4 = menu.ID
-        OR plannifier.idmenu5 = menu.ID
-        ");
-    $plannifiers = $query->fetchAll(); 
+    $query = $bdd->query("SELECT plannifier.jour as pj,idmenu2,nommenu,dessert FROM plannifier, menu WHERE plannifier.idmenu2 = menu.ID");
+    $menus2 = $query->fetchAll(); 
+
+    $query = $bdd->query("SELECT plannifier.jour as pj,idmenu3,nommenu,dessert FROM plannifier, menu WHERE plannifier.idmenu3 = menu.ID");
+    $menus3 = $query->fetchAll(); 
+
+    $query = $bdd->query("SELECT plannifier.jour as pj,idmenu4,nommenu,dessert FROM plannifier, menu WHERE plannifier.idmenu4 = menu.ID");
+    $menus4 = $query->fetchAll(); 
+
+    $query = $bdd->query("SELECT plannifier.jour as pj,idmenu5,nommenu,dessert FROM plannifier, menu WHERE plannifier.idmenu5 = menu.ID");
+    $menus5 = $query->fetchAll(); 
 
         //var_dump($plannifiers) ;die();
 
@@ -22,7 +26,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Liste des Apprenants</title>
+    <title>Liste des Planning</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -105,19 +109,19 @@
       <button type="submit" class="btn btn-success" onclick="window.print();"><a href="./Listedesapprenant.php">Imprimer la liste</a></button>
       </div>
       <div class="col-auto my-5">
-      <button type="submit" class="btn btn-success"> <a href="./newapprenant.php"> Nouvel Apprenant</a></button>
+      <button type="submit" class="btn btn-success"> <a href="./newapprenant.php"> Nouveau Planning</a></button>
       </div>
     </div>
   </form>
   </div>
 </div>
        <div class="row">
-       <div class="col-3"></div>
+       <div class="col-6"></div>
        <div class="col">
               <div class="card border border-primary">
                       <div class="card-header bg-primary">
                         <div class="col-12 text-center">
-                        Ajout Apprenant
+                        Liste Planning
                       </div>
                       </div>
 
@@ -141,18 +145,20 @@
                     <tbody>
 
                       <?php 
-                    foreach ($plannifiers as $key => $plannifier) {
+                      $i = 0;
+
+                    foreach ($menus1 as $key => $menu1) {
                 
                 ?>
                     <tr>
 
-                       <td class="table-primary"><?php echo $plannifier['pj'];?></td>
-                       <td class="table-secondary"><?php echo $plannifier['nmenu'];?></td>
-                       <td class="table-secondary"><?php echo $plannifier['nmenu'];?></td>
-                       <td class="table-primary"><?php echo $plannifier['nmenu'];?></td>
-                       <td class="table-secondary"><?php echo $plannifier['nmenu'];?></td>
-                       <td class="table-secondary"><?php echo $plannifier['nmenu'];?></td>
-                       <td class="table-secondary"><?php echo $plannifier['dessert'];?></td>
+                       <td class="table-primary"><?php echo $menu1['pj'];?></td>
+                       <td class="table-secondary"><?php echo $menu1['nommenu'];?></td>
+                       <td class="table-secondary"><?php echo $menus2[$i]['nommenu'];?></td>
+                       <td class="table-primary"><?php echo $menus3[$i]['nommenu'];?></td>
+                       <td class="table-secondary"><?php echo $menus4[$i]['nommenu'];?></td>
+                       <td class="table-secondary"><?php echo $menus5[$i]['nommenu'];?></td>
+                       <td class="table-secondary"><?php echo $menu1['dessert'];?></td>
                        
                        
                        <td class="table-dark">
@@ -166,7 +172,7 @@
 
                     </tr>
                 <?php
-                    
+                    $i++;
                     }
                 ?>
                 </tbody>
